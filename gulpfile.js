@@ -39,7 +39,7 @@ gulp.task('copy', function(){
    .pipe(gulp.dest('dest/assets/data'));
 });
 
-gulp.task('clean', function(cd){
+gulp.task('clean', function(cb){
   return rimraf('dest', cb);
 });
 
