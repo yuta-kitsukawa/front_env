@@ -25,7 +25,7 @@ gulp.task('sass', function() {
 gulp.task('js', function(){
   gulp.src('src/assets/js/**/*.js')
   .pipe(plumber({errorHandler: notify.onError('<%- error.mesagge %>')}))
-  .pipe(uglify())
+  // .pipe(uglify())
   .pipe(rename({suffix:'.min'}))
   .pipe(gulp.dest('dest/assets/js'))
 });
